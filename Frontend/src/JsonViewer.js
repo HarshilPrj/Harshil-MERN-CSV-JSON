@@ -77,7 +77,7 @@ function JsonViewer({ data }) {
       return (
         <div key={uniqueKey} style={{ paddingLeft: `${level * 20}px` }}>
           <span>
-            {key && `${key}: `}
+            {key && `"${key}" : `}
             {JSON.stringify(value)}
           </span>
         </div>
